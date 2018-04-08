@@ -57,7 +57,7 @@ directories.readMembers('Exmail')
 ## 注意事项
 
 - 全部代码使用ES6进行编写, 您可能需要`babel`或`--harmony`模式的协助
-- 执行测试时请先行配置以下环境变量
+- 执行测试时请先行配置以下环境变量
   - `EXMAIL_CORP_ID` 腾讯企业邮箱授予的组织ID
   - `EXMAIL_ADDRESS_LIST_SECRET` 腾讯企业邮箱授予的组织秘钥
 

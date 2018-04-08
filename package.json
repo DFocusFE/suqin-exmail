@@ -1,13 +1,13 @@
 {
   "name": "suqin-exmail",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A module for connecting Dingtalk",
   "main": "./index.js",
   "scripts": {
     "git-commit": "f(){ git add $1 ; git-cz;};f",
     "commit": "npm run git-commit",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-    "test": "mocha -t 5000 --reporter spec --require should test/*.test.js --bail",
+    "test": "sh test.sh",
     "test-cov": "istanbul cover _mocha -- -t 5000 -u exports --require should test/*.test.js --bail"
   },
   "keywords": [
