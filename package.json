@@ -1,0 +1,49 @@
+{
+  "name": "suqin-exmail",
+  "version": "0.0.1",
+  "description": "A module for connecting Dingtalk",
+  "main": "./index.js",
+  "scripts": {
+    "git-commit": "f(){ git add $1 ; git-cz;};f",
+    "commit": "npm run git-commit",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "test": "mocha -t 5000 --reporter spec --require should test/*.test.js --bail",
+    "test-cov": "istanbul cover _mocha -- -t 5000 -u exports --require should test/*.test.js --bail"
+  },
+  "keywords": [
+    "account",
+    "api",
+    "middleware",
+    "suqin",
+    "Exmail"
+  ],
+  "author": "ZhouRui<zhourui@dfocuspace.com>",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DFocusFE/suqin-exmail.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "conventional-changelog-cli": "^1.3.5",
+    "conventional-gitlab-releaser": "^2.1.10",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^4.0.1",
+    "should": "^13.1.3"
+  },
+  "dependencies": {
+    "json-bigint": "^0.2.3",
+    "suqin": "0.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
